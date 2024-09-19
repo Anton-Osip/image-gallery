@@ -1,0 +1,113 @@
+body {
+    background: #191919;
+    min-height: 100lvh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.border {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, rgb(231, 15, 170), rgb(19, 176, 245));
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo > img {
+    aspect-ratio: 75/51;
+    width: 150px;
+}
+
+.header__search {
+    position: relative;
+    width: 350px;
+}
+
+.header__search input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.30s ease-in-out;
+    border: 1px solid #DDDDDD;
+}
+
+.header__search img {
+    color: black;
+    position: absolute;
+    cursor: pointer;
+    top: 25%;
+    right: 4%;
+    transition: 1s;
+    width: 16px;
+    height: 16px;
+}
+
+.header__search input:focus {
+    box-shadow: 0 0 5px #8500ff;
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.img {
+    width: 380px;
+    height: 214px;
+    margin-top: 15px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+.footer {
+    margin-top: auto;
+    height: 80px;
+}
+
+
+.logo {
+    width: 75px;
+    height: 51px;
+}
+
+.date {
+    color: white;
+    font-size: 24px;
+}
+
+.school > img {
+    height: 51px;
+}
+
+@media screen and (max-width: 426px) {
+    .container {
+        max-width: 276px
+    }
+}
